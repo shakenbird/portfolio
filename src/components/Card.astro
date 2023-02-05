@@ -8,7 +8,7 @@ const { href, title } = Astro.props;
 ---
 
 <li class="link-card">
-	<a href={href}>
+	<a style="text-decoration:none;" href={href}>
 		<h3>
 			{title}
 			<span>&rarr;</span>
@@ -32,7 +32,9 @@ const { href, title } = Astro.props;
 h3 {
   font-weight: 500;
   font-size: 17.5px;
-  text-decoration:none;
+  color: #1f1f1f;
 }
-
+a {
+	text-decoration: none;
+}
 </style>
